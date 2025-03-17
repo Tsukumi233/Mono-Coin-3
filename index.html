@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="古风硬币占卜工具，抛掷三枚铜钱预测吉凶">
+    <meta name="keywords" content="占卜,硬币,铜钱,算命,周易,3D,古风">
+    <title>古风硬币占卜</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.min.js"></script>
+    <script src="coin-texture.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>古风硬币占卜</h1>
+            <p class="subtitle">抛掷三枚铜钱，探知天机</p>
+        </div>
+        
+        <div class="scene-container">
+            <div id="coin-scene"></div>
+            <div class="result-display">
+                <div id="result-text"></div>
+                <div id="result-meaning"></div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="toss-button">抛掷铜钱</button>
+        </div>
+        
+        <div class="footer">
+            <p>古法占卜 • 仅供娱乐</p>
+        </div>
+        
+        <!-- 调试面板 -->
+        <div id="debug-panel" class="debug-panel">
+            <h3>调试信息</h3>
+            <div id="debug-info"></div>
+            <button id="toggle-debug">显示/隐藏调试</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
